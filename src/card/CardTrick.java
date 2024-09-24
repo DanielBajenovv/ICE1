@@ -34,6 +34,10 @@ public class CardTrick {
         userCard.setValue(userValue);
         userCard.setSuit(userSuit);
 
+        Card luckyCard = new Card();
+        luckyCard.setValue(12);
+        luckyCard.setSuit("Hearts");
+
         System.out.println("You picked: " + userCard.getSuit() + ' ' + userCard.getValue());
         
         boolean found = false;
