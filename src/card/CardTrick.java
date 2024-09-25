@@ -38,6 +38,9 @@ public class CardTrick {
         luckyCard.setValue(12);
         luckyCard.setSuit("Hearts");
 
+        int randomIndex = (int) (Math.random() * magicHand.length);
+        magicHand[randomIndex] = luckyCard;
+
         System.out.println("You picked: " + userCard.getSuit() + ' ' + userCard.getValue());
         
         boolean found = false;
